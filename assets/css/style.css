@@ -6,6 +6,10 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
+
+body {
+  overflow-x: hidden;
+}
 /* ============================================================== */
 
 /* =========================== Header =========================== */
@@ -163,7 +167,52 @@ header {
 }
 /* ============================================================== */
 
-/* =========================== Header =========================== */
+/* ========================== About Us ========================== */
+.default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.default .section-title {
+  font-size: 20px;
+}
+
+.default .section-description {
+  font-size: 10px;
+  color: #aaaaaa;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.default .section-title,
+.default .section-description {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-body {
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: aqua;
+  min-height: 100px;
+}
+
+.default.light {
+  background-color: #f7f7f7;
+}
+
+.default.light .section-title {
+  color: #000000;
+}
+
+.default.dark {
+  background-color: #000000;
+}
+
+.default.dark .section-title {
+  color: #ffffff;
+}
 /* ============================================================== */
 /* =========================== Header =========================== */
 /* ============================================================== */
