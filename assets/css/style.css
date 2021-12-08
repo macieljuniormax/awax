@@ -232,25 +232,45 @@ header {
 .section-aboutUs--left p{
   font-size: 14px;
   line-height: 20px;
-  padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 50px;
   
-}
-
-.section-aboutUs--left a{
-  margin-left: 20px;
 }
 
 .section-aboutUs--right {
   min-width: 500px;
 }
 .section-aboutUs--right img {
-  width: 400px;
+  width: 100%;
   box-shadow: 0px 5px 10px; #333333
 }
 /* ============================================================== */
+.section-services{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.section-service{
+  text-align: center;
+  border-left: 1px solid #CCCCCC;
+  padding: 15px;
+}
+
+.section-service:last-child{
+  border-right: 1px solid #CCCCCC;
+}
+
+.section-service h3{
+  margin-top: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.section-service p{
+  margin-top: 10px;
+  font-size: 12px;
+}
 /* ========================== Services ========================== */
 
 /* ============================================================== */
