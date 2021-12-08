@@ -245,6 +245,7 @@ header {
   box-shadow: 0px 5px 10px; #333333
 }
 /* ============================================================== */
+/* ========================== Services ========================== */
 .section-services{
   display: flex;
   align-items: center;
@@ -253,12 +254,12 @@ header {
 
 .section-service{
   text-align: center;
-  border-left: 1px solid #CCCCCC;
+  border-left: 1px solid #999999;
   padding: 15px;
 }
 
 .section-service:last-child{
-  border-right: 1px solid #CCCCCC;
+  border-right: 1px solid #999999;
 }
 
 .section-service h3{
@@ -271,10 +272,111 @@ header {
   margin-top: 10px;
   font-size: 12px;
 }
-/* ========================== Services ========================== */
-
 /* ============================================================== */
-/* =========================== Header =========================== */
+/* ========================== Projects ========================== */
+.section-projects{
+  display: flex;
+  justify-content: center;
+}
+
+.section-projects--filters{
+  border: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-projects--filters ul{
+  display: flex;
+  justify-content: center;
+}
+
+.section-projects--filters ul li {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 20px;
+  border-left: 1px solid #CCCCCC;
+  color: #999999;
+  border: 3px solid #EEEEEE;
+}
+
+.section-projects--filters ul li:first-child{
+  border: none;
+}
+
+.section-projects--filters ul li:hover, .section-projects--filters ul li.active{
+  border-bottom: 3px solid #b28756;
+  cursor: pointer;
+  
+}
+
+.section-projects--photos{
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-projects--photo{
+  width: 280px;
+}
+
+.section-projects--photo-area{
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-projects--photo-area img{
+  width: inherit;
+  height: inherit;
+}
+
+.section-projects-photo-info{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.section-projects-photo-info h4{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-projects-photo-info p{
+  margin-top: 15px;
+  font-size: 10px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-projects--photo-area:hover .section-projects-photo-info{
+  display: flex;
+  cursor: pointer;
+}
+
+.section-body-projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-body-projects a{
+  margin-top: 20px;
+}
 /* ============================================================== */
 /* =========================== Header =========================== */
 /* ============================================================== */
