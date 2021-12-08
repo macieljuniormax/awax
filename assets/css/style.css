@@ -92,6 +92,7 @@ header {
 }
 
 .banner .sliders {
+  margin-top: -12px;
   width: 1000vw;
   height: 100%;
 }
@@ -118,7 +119,7 @@ header {
   font-size: 50px;
 }
 
-.banner span {
+.banner spam {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 50px;
@@ -132,16 +133,8 @@ header {
   margin-top: 20px;
 }
 
-.banner a {
-  background-color: #b28756;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-top: 45px;
-  border-radius: 20px;
+.banner a{
+  margin-top: 50px;
 }
 
 .banner .slider-pointers {
@@ -167,7 +160,18 @@ header {
 }
 /* ============================================================== */
 
-/* ========================== About Us ========================== */
+/* ========================== Default =========================== */
+.button {
+  background-color: #b28756;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
 .default {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -194,15 +198,14 @@ header {
 .default .section-body {
   max-width: 1140px;
   margin: 0 auto;
-  background-color: aqua;
-  min-height: 100px;
 }
 
 .default.light {
   background-color: #f7f7f7;
 }
 
-.default.light .section-title {
+.default.light .section-title,
+.default.light .section-body {
   color: #000000;
 }
 
@@ -210,13 +213,46 @@ header {
   background-color: #000000;
 }
 
-.default.dark .section-title {
+.default.dark .section-title,
+.default.dark .section-body {
   color: #ffffff;
 }
 /* ============================================================== */
-/* =========================== Header =========================== */
+
+/* ========================== About Us ========================== */
+.section-aboutUs {
+  display: flex;
+}
+
+.section-aboutUs--left {
+  display: inline-block;
+  flex-direction: column;
+
+}
+.section-aboutUs--left p{
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  
+}
+
+.section-aboutUs--left a{
+  margin-left: 20px;
+}
+
+.section-aboutUs--right {
+  min-width: 500px;
+}
+.section-aboutUs--right img {
+  width: 400px;
+  box-shadow: 0px 5px 10px; #333333
+}
 /* ============================================================== */
-/* =========================== Header =========================== */
+
+/* ========================== Services ========================== */
+
 /* ============================================================== */
 /* =========================== Header =========================== */
 /* ============================================================== */
