@@ -480,10 +480,87 @@ header {
 .section-team--social a:hover{
   background-color: #b28756;
 }
+/* ============================================================== */
+
+/* ============================ Price =========================== */
+.section-price--area{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.section-price--card{
+  background-color: #ffffff;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.section-price--card h4{
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.section-price--card h5{
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.section-price--card p{
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 300;
+  color: #999999;
+}
+
+.section-price--card ul{
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: normal;
+  list-style: none;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.section-price--card li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+
+.section-price--card li::after{
+  content: '';
+  margin-top: 5px;
+  width: 5px;
+  height: 1px;
+  background: #999999;
+}
+
+.section-price--card a{
+  background: #333333;
+
+}
+
+.section-price--card a:hover{
+  background: #b28756;
+
+}
 
 /* ============================================================== */
-/* =========================== Header =========================== */
-/* ============================================================== */
+
+
 /* =========================== Header =========================== */
 /* ============================================================== */
 /* =========================== Header =========================== */
