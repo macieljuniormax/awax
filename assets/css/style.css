@@ -482,6 +482,13 @@ header {
 }
 /* ============================================================== */
 
+/* ========================== Companys ========================== */
+.section-companys{
+  display: flex;
+  justify-content: space-between;
+}
+/* ============================================================== */
+
 /* ============================ Price =========================== */
 .section-price--area{
   display: flex;
@@ -498,6 +505,7 @@ header {
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
+  flex-grow: 1;
 }
 
 .section-price--card h4{
@@ -557,7 +565,6 @@ header {
   background: #b28756;
 
 }
-
 /* ============================================================== */
 
 
