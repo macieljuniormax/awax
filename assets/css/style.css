@@ -76,6 +76,10 @@ header {
   color: #ffffff;
 }
 
+.menu-opner{
+  display: none;
+}
+
 /* ============================================================== */
 
 /* ======================= Section Banner ======================= */
@@ -596,12 +600,7 @@ header {
   margin-bottom: 5px;
 }
 
-.section-fact h4{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 15px;
-  min-height: 40px;
-}
+c
 /* ============================================================== */
 
 /* ======================== Tell About Us ======================= */
@@ -846,12 +845,367 @@ header {
     margin-top: 10px;
   }
 }
+/* ============================================================== */
 
-@media (min-width:450px) and (max-width:800px){
+/* ================= Responsividade Tablet iPad ================= */
+@media (min-width:480px) and (max-width:800px){
   nav{
     display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 40vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+
+  .menu ul{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .menu li a{
+    font-weight: bold;
+    font-size: 20px;
+    height: 80px;
+    border: none;
+  }
+
+  .menu li a:hover{
+    border: none;
+    color: #b28756;
+  }
+
+  .menu-opner{
+    display: flex;
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+  }
+
+  .section-aboutUs{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-aboutUs--right {
+    min-width: 300px;
+  }
+
+  .section-services{
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-service.odd{
+    margin-bottom: 15px;
+  }
+
+  .section-service{
+    width: 49%;
+    text-align: center;
+    border: 1px solid #999999;
+    border-radius: 10px;
+  }
+
+  .section-team{
+    max-width: 580px;
+  }
+
+  .section-companys{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-price--area{
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-price--card.odd{
+    margin-bottom: 20px;
+  }
+
+  .section-facts{
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-fact{
+    width: 50%;
+    text-align: center;
+  }
+
+  .section-fact.odd{
+    margin-bottom: 50px;
+  }
+
+  .section-footer{
+    padding-right: 30px;
+  }
+  
+  .section-footer--social{
+    padding: 5px 10px;
+  }
+  
+  
+  .section-footer--social---socials a{
+    margin-right: 5px; 
+  }
+  
+  .section-footer--social---brand{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .section-footer--description{
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  .section-footer--description p{
+    font-size: 10px;
+  }
+  
+  .section-footer--form---area{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .section-footer--form a{
+    margin-top: 10px;
   }
 }
 /* ============================================================== */
-/* =========================== Header =========================== */
+@media (max-width:480px){
+  nav{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 60vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+
+  .menu ul{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .menu li a{
+    font-weight: bold;
+    font-size: 15px;
+    height: 70px;
+    border: none;
+  }
+
+  .menu li a:hover{
+    border: none;
+    color: #b28756;
+  }
+
+  .menu-opner{
+    display: flex;
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+  
+  .banner spam {
+    font-size: 30px;
+  }
+  
+  .banner h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .section-aboutUs{
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-aboutUs--right {
+    min-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .section-aboutUs--left {
+    display: block;
+    text-align: center;
+  }
+
+  .section-aboutUs--left p{
+    padding: 0;
+  }
+
+  .section-services{
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+  }
+
+  .section-service{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .section-team{
+    max-width: 300px;
+  }
+
+  .section-companys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-company{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .section-company.margin{
+    margin-bottom: 40px;
+  }
+
+  .section-price--area{
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-price--card.odd{
+    margin-bottom: 20px;
+  }
+
+  .section-facts{
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-fact{
+    width: 50%;
+    text-align: center;
+  }
+
+  .section-fact.odd{
+    margin-bottom: 50px;
+  }
+
+  .section-fact h4{
+    min-height: 50px;
+  }
+
+/* ffffff */
+
+
+  .section-tellabout{
+    flex-direction: column;
+  }
+  
+  .section-tellabout--title{
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-tellabout--title p{
+    margin-right: 0px;
+  }
+  
+  .section-tell-abbout--social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-tellabout--socials{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section-tellabout--socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+  
+  .section-tellabout--socials p{
+    font-size: 10px;
+    color: #AAAAAA;
+    margin-right: 20px;
+  }
+
+
+/* sfasdfsdf */
+
+  .section-footer{
+    padding-right: 30px;
+  }
+  
+  .section-footer--social{
+    padding: 5px 10px;
+  }
+  
+  
+  .section-footer--social---socials a{
+    margin-right: 5px; 
+  }
+  
+  .section-footer--social---brand{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .section-footer--description{
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  .section-footer--description p{
+    font-size: 10px;
+  }
+  
+  .section-footer--form---area{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .section-footer--form a{
+    margin-top: 10px;
+  }
+}
+/* =================== Responsividade Celular =================== */
 /* ============================================================== */
