@@ -825,7 +825,33 @@ header {
 }
 /* ============================================================== */
 
-/* =========================== Header =========================== */
+/* =============== Responsividade Tablet iPad Pro =============== */
+@media (min-width:800px) and (max-width:1280px){
+  .section-aboutUs{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-companys{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-footer{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-footer--form a{
+    margin-top: 10px;
+  }
+}
+
+@media (min-width:450px) and (max-width:800px){
+  nav{
+    display: none;
+  }
+}
 /* ============================================================== */
 /* =========================== Header =========================== */
 /* ============================================================== */
